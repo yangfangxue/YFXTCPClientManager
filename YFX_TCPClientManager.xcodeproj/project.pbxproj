@@ -15,6 +15,9 @@
 		6A4BE06A1EA5DDAB006579FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4BE0681EA5DDAB006579FD /* LaunchScreen.storyboard */; };
 		6A4BE0751EA5DDAB006579FD /* YFX_TCPClientManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4BE0741EA5DDAB006579FD /* YFX_TCPClientManagerTests.m */; };
 		6A4BE0801EA5DDAB006579FD /* YFX_TCPClientManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4BE07F1EA5DDAB006579FD /* YFX_TCPClientManagerUITests.m */; };
+		6A4BE0921EA5DDF4006579FD /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4BE08F1EA5DDF4006579FD /* GCDAsyncSocket.m */; };
+		6A4BE0931EA5DDF4006579FD /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4BE0911EA5DDF4006579FD /* GCDAsyncUdpSocket.m */; };
+		6A4BE0961EA5DE4B006579FD /* YFXTCPClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4BE0951EA5DE4B006579FD /* YFXTCPClientManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		6A4BE07B1EA5DDAB006579FD /* YFX_TCPClientManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFX_TCPClientManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4BE07F1EA5DDAB006579FD /* YFX_TCPClientManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFX_TCPClientManagerUITests.m; sourceTree = "<group>"; };
 		6A4BE0811EA5DDAB006579FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A4BE08E1EA5DDF4006579FD /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		6A4BE08F1EA5DDF4006579FD /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		6A4BE0901EA5DDF4006579FD /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		6A4BE0911EA5DDF4006579FD /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		6A4BE0941EA5DE4B006579FD /* YFXTCPClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFXTCPClientManager.h; sourceTree = "<group>"; };
+		6A4BE0951EA5DE4B006579FD /* YFXTCPClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFXTCPClientManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,13 @@
 		6A4BE0591EA5DDAB006579FD /* YFX_TCPClientManager */ = {
 			isa = PBXGroup;
 			children = (
+				6A4BE08D1EA5DDF4006579FD /* GCDAsyncSocket */,
 				6A4BE05D1EA5DDAB006579FD /* AppDelegate.h */,
 				6A4BE05E1EA5DDAB006579FD /* AppDelegate.m */,
 				6A4BE0601EA5DDAB006579FD /* ViewController.h */,
 				6A4BE0611EA5DDAB006579FD /* ViewController.m */,
+				6A4BE0941EA5DE4B006579FD /* YFXTCPClientManager.h */,
+				6A4BE0951EA5DE4B006579FD /* YFXTCPClientManager.m */,
 				6A4BE0631EA5DDAB006579FD /* Main.storyboard */,
 				6A4BE0661EA5DDAB006579FD /* Assets.xcassets */,
 				6A4BE0681EA5DDAB006579FD /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				6A4BE0811EA5DDAB006579FD /* Info.plist */,
 			);
 			path = YFX_TCPClientManagerUITests;
+			sourceTree = "<group>";
+		};
+		6A4BE08D1EA5DDF4006579FD /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				6A4BE08E1EA5DDF4006579FD /* GCDAsyncSocket.h */,
+				6A4BE08F1EA5DDF4006579FD /* GCDAsyncSocket.m */,
+				6A4BE0901EA5DDF4006579FD /* GCDAsyncUdpSocket.h */,
+				6A4BE0911EA5DDF4006579FD /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCDAsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4BE0961EA5DE4B006579FD /* YFXTCPClientManager.m in Sources */,
+				6A4BE0921EA5DDF4006579FD /* GCDAsyncSocket.m in Sources */,
+				6A4BE0931EA5DDF4006579FD /* GCDAsyncUdpSocket.m in Sources */,
 				6A4BE0621EA5DDAB006579FD /* ViewController.m in Sources */,
 				6A4BE05F1EA5DDAB006579FD /* AppDelegate.m in Sources */,
 				6A4BE05C1EA5DDAB006579FD /* main.m in Sources */,
